@@ -19,11 +19,14 @@ let weather = {
     displayWeather: function (data) {
       const { name } = data.city;
       const { temp } = data.list[0].main;
+      const { icon } = data.list[0].weather[0];
+      const { description } = data.list[0].weather[0];
       document.querySelector(".city").innerText = "Weather in " + name;
       document.querySelector(".temp").innerText = temp + "°C";
+      document.querySelector(".icon").src =
+      "https://openweathermap.org/img/wn/" + icon + ".png";
+      document.querySelector(".description").innerText = description;
       document.querySelector(".weather").classList.remove("loading");
-      //document.body.style.backgroundImage =
-      //  "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
     displayWeather1: function (data) {
       const { temp } = data.list[8].main;
