@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(14,174,87,1) 0%, rgba(12,116,117,1) 90% );
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  #6A85B6 0%, #BAC8E0 90% );
     font-size: 120%;
   }
   
@@ -35,7 +35,6 @@ body {
     background: #7c7c7c2b;
     color: white;
     cursor: pointer;
-    transition: 0.2s ease-in-out;
   }
   
   input.search-bar {
@@ -51,7 +50,7 @@ body {
   }
   
   button:hover {
-    background: #7c7c7c6b;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  #6A85B6 0%, #BAC8E0 90% );
   }
   
   h1.temp {
@@ -62,6 +61,7 @@ body {
   .flex {
     display: flex;
     align-items: center;
+    font-size: 30px;
   }
   
   .description {
